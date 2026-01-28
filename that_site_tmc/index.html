@@ -1,0 +1,215 @@
+<!-- ...existing code... -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeamCare Plumbers & Contractors</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav aria-label="Primary">
+                <div class="brand">TeamCare Plumbers & Contractors</div>
+                <div class="nav-links" role="navigation" aria-label="Main navigation">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#services">Services</a>
+                    <a href="#gallery">Gallery</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Home / Intro / Hero -->
+        <section id="home" class="hero" aria-labelledby="home-heading">
+            <div class="hero-inner">
+                <h1 id="home-heading">Reliable plumbing, tiling & bathroom solutions</h1>
+                <p>Local specialists in plumbing, tiling, ceiling work and full bathroom installations — commercial & residential.</p>
+                <div>
+                    <a class="hero-cta" href="#services">View services</a>
+                    <a style="margin-left:.6rem;color:var(--accent);text-decoration:none" href="#contact">Get a quote</a>
+                </div>
+            </div>
+
+            <div class="hero-visual" role="img" aria-label="Hero image space for plumbing and tiling">
+                <!-- Replace this div with an <img> for production -->
+                Hero image / plumbing & tiling (placeholder)
+            </div>
+        </section>
+
+        <!-- About -->
+        <section id="about" aria-labelledby="about-heading">
+            <h2 id="about-heading">About TeamCare</h2>
+            <p>TeamCare Plumbers & Contractors provide trusted, licensed tradespeople for plumbing, tiling, ceilings and solar geyser installations. We focus on durable workmanship, clear quotes and timely project delivery.</p>
+        </section>
+
+        <!-- Services -->
+        <section id="services" aria-labelledby="services-heading">
+            <h2 id="services-heading">Services</h2>
+            <p>Comprehensive services for homes and businesses.</p>
+
+            <div class="grid" role="list">
+                <article class="card" role="listitem">
+                    <h3>Plumbing</h3>
+                    <p>Repairs, pipework, leak detection, installations and maintenance.</p>
+                </article>
+
+                <article class="card" role="listitem">
+                    <h3>Tiling & Ceiling Solutions</h3>
+                    <p>Wall and floor tiling, waterproofing and ceiling repairs/installation.</p>
+                </article>
+
+                <article class="card" role="listitem">
+                    <h3>Solar Geyser Installation</h3>
+                    <p>Supply and fit of solar geysers, system sizing and commissioning.</p>
+                </article>
+
+                <article class="card" role="listitem">
+                    <h3>Draining</h3>
+                    <p>Sewer and stormwater draining, unblocking and preventative solutions.</p>
+                </article>
+
+                <article class="card" role="listitem">
+                    <h3>JoJo Tanks</h3>
+                    <p>Supply and installation of JoJo tanks, pump systems and rainwater harvesting.</p>
+                </article>
+
+                <article class="card" role="listitem">
+                    <h3>Water Supply Systems</h3>
+                    <p>Pressure boosting, reticulation and pump installations.</p>
+                </article>
+
+                <article class="card" role="listitem">
+                    <h3>Vanities & Shower Columns</h3>
+                    <p>Supply and installation of vanities, mixer taps and shower columns.</p>
+                </article>
+
+                <article class="card" role="listitem">
+                    <h3>Freestanding Tubs & Mixers</h3>
+                    <p>High-end fittings, bath installation and waterproofing for wet areas.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Gallery (between Services and Contact) -->
+        <section id="gallery" aria-labelledby="gallery-heading">
+            <h2 id="gallery-heading">Project Gallery</h2>
+            <p>Browse recent projects by service — select a tab to filter.</p>
+
+            <div class="gallery-tabs" role="tablist" aria-label="Gallery filters">
+                <button class="tab-btn active" data-tab="all" role="tab" aria-selected="true">All</button>
+                <button class="tab-btn" data-tab="plumbing" role="tab">Plumbing</button>
+                <button class="tab-btn" data-tab="tiling" role="tab">Tiling &amp; Ceilings</button>
+                <button class="tab-btn" data-tab="solar" role="tab">Solar Geysers</button>
+                <button class="tab-btn" data-tab="draining" role="tab">Draining</button>
+                <button class="tab-btn" data-tab="jojotanks" role="tab">JoJo Tanks</button>
+                <button class="tab-btn" data-tab="water" role="tab">Water Systems</button>
+                <button class="tab-btn" data-tab="vanities" role="tab">Vanities &amp; Showers</button>
+            </div>
+
+            <div class="gallery-grid" aria-live="polite">
+                <figure class="gallery-item" data-service="plumbing">
+                    <img src="https://via.placeholder.com/400x300?text=Plumbing+1" alt="Plumbing project 1">
+                    <figcaption>Plumbing repair — kitchen</figcaption>
+                </figure>
+
+                <figure class="gallery-item" data-service="tiling">
+                    <img src="https://via.placeholder.com/400x300?text=Tiling+1" alt="Tiling project 1">
+                    <figcaption>Bathroom tiled floor</figcaption>
+                </figure>
+
+                <figure class="gallery-item" data-service="solar">
+                    <img src="https://via.placeholder.com/400x300?text=Solar+1" alt="Solar geyser installation">
+                    <figcaption>Solar geyser install</figcaption>
+                </figure>
+
+                <figure class="gallery-item" data-service="draining">
+                    <img src="https://via.placeholder.com/400x300?text=Draining+1" alt="Draining project">
+                    <figcaption>Sewer unblocking &amp; drain repair</figcaption>
+                </figure>
+
+                <figure class="gallery-item" data-service="jojotanks">
+                    <img src="https://via.placeholder.com/400x300?text=JoJo+1" alt="JoJo tank installation">
+                    <figcaption>JoJo tank &amp; pump setup</figcaption>
+                </figure>
+
+                <figure class="gallery-item" data-service="water">
+                    <img src="https://via.placeholder.com/400x300?text=Water+1" alt="Water system project">
+                    <figcaption>Pressure boosting system</figcaption>
+                </figure>
+
+                <figure class="gallery-item" data-service="vanities">
+                    <img src="https://via.placeholder.com/400x300?text=Vanity+1" alt="Vanity installation">
+                    <figcaption>Vanity &amp; shower column install</figcaption>
+                </figure>
+
+                <figure class="gallery-item" data-service="tiling">
+                    <img src="https://via.placeholder.com/400x300?text=Tiling+2" alt="Tiling project 2">
+                    <figcaption>Wet area waterproofing &amp; tiling</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- Contact / Request Quote -->
+        <section id="contact" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Contact & Request a Quote</h2>
+            <div class="contact-wrap">
+                <div class="contact-info">
+                    <p>For quotes and enquiries, reach us:</p>
+                    <p><strong>Phone:</strong> <a href="tel:0123456789">012-345-6789</a></p>
+                    <p><strong>Email:</strong> <a href="mailto:info@teamcare.example">info@teamcare.example</a></p>
+                    <p>We aim to respond within one business day.</p>
+                </div>
+
+                <form class="contact-form" id="quote-form" aria-label="Request a quote" novalidate>
+                    <div>
+                        <label for="name">Full name</label>
+                        <input id="name" name="name" type="text" required>
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email" required>
+                    </div>
+                    <div>
+                        <label for="phone">Phone</label>
+                        <input id="phone" name="phone" type="tel">
+                    </div>
+                    <div>
+                        <label for="service">Service</label>
+                        <select id="service" name="service">
+                            <option value="plumbing">Plumbing</option>
+                            <option value="tiling">Tiling &amp; Ceilings</option>
+                            <option value="solar">Solar Geysers</option>
+                            <option value="draining">Draining</option>
+                            <option value="jojotanks">JoJo Tanks</option>
+                            <option value="water">Water Systems</option>
+                            <option value="vanities">Vanities &amp; Showers</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="details">Project details</label>
+                        <textarea id="details" name="details" rows="4"></textarea>
+                    </div>
+                    <div>
+                        <button type="submit" class="hero-cta">Request Quote</button>
+                    </div>
+                    <div id="form-status" aria-live="polite" class="form-status"></div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <small>© TeamCare Plumbers & Contractors — All rights reserved.</small>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
